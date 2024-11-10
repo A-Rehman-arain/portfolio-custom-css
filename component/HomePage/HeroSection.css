@@ -1,0 +1,144 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-title {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+  }
+  
+  .hero-name {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  
+  .hero-highlight {
+    color: var(--main-color);
+    font-weight: 700;
+  }
+  
+  .hero-description {
+    max-width: 600px;
+    font-weight: 600;
+    padding: 1rem 0;
+    color: #475569;
+  }
+  
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .hire-button {
+    background-color: var(--main-color);
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .hire-button:hover {
+    background-color: white;
+    border-color: var(--main-color);
+    color: black;
+    opacity: 0.9;
+  }
+  
+  .social-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .social-list {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .social-item {
+    border-radius: 9999px;
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .social-item:hover {
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  .photo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  @media (min-width: 850px) {
+    .hero-container {
+      flex-direction: row;
+      padding: 4rem 2rem 0 2rem;
+    }
+  
+    .hero-content {
+      width: 50%;
+      text-align: left;
+    }
+  
+    .hero-name {
+      font-size: 68px;
+    }
+  
+    .cta-container {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .button-container {
+      justify-content: flex-start;
+    }
+  
+    .social-container {
+      justify-content: flex-start;
+      margin-top: 0;
+    }
+  
+    .photo-container {
+      width: 50%;
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+  }
+  
+  :root {
+    --main-color: #2dd4bf;
+  }

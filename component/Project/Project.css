@@ -1,0 +1,276 @@
+/* #project {
+  background-color: RGB(244, 244, 244);
+}
+
+.project-divider {
+  border-color: black;
+  border-width: 2px;
+}
+
+.project-section {
+  color: #4a5568;
+}
+
+.project-container {
+  padding: 1.25rem;
+  padding-top: 4rem; 
+  padding-bottom: 4rem; 
+  margin: auto;
+}
+
+.project-title-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5rem; 
+}
+
+.project-title {
+  font-size: 1.5rem; 
+  font-weight: 500;
+  color: #1a202c; 
+}
+
+
+@media (min-width: 640px) {
+  .project-title {
+    font-size: 1.875rem; 
+  }
+}
+
+.project-description {
+  width: 100%;
+  margin: auto;
+  line-height: 1.5;
+}
+
+@media (min-width: 1024px) {
+  .project-description {
+    width: 66.67%; 
+  }
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem; 
+}
+
+.project-card {
+  width: 100%; 
+  padding: 1rem; 
+  cursor: pointer;
+}
+
+
+@media (min-width: 640px) {
+  .project-card {
+    width: 50%; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-card {
+    width: 33.33%; 
+  }
+}
+
+.project-card-inner {
+  position: relative;
+  display: flex;
+}
+
+.project-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-content {
+  padding: 2rem; 
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  border-width: 4px;
+  border-color: #e2e8f0; 
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-content {
+  opacity: 1;
+}
+
+.project-subtitle {
+  color: #667eea; 
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.project-heading {
+  font-size: 1.125rem; 
+  font-weight: 500;
+  color: #1a202c; 
+  margin-bottom: 0.75rem;
+}
+
+.project-text {
+  line-height: 1.5;
+}
+
+.project-link {
+  color: #667eea; 
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+} */
+
+
+
+/* global.css */
+
+/* Container and overall styles */
+#project {
+  background-color: RGB(244, 244, 244);
+}
+
+.project-divider {
+  border-color: black;
+  border-width: 2px;
+}
+
+.project-section {
+  color: #4a5568; /* text-gray-600 */
+}
+
+.project-container {
+  padding: 1.25rem; /* px-5 */
+  padding-top: 4rem; /* py-16 */
+  padding-bottom: 4rem; /* py-16 */
+  margin: auto;
+}
+
+/* Project title and description */
+.project-title-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5rem; /* mb-20 */
+}
+
+.project-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 500;
+  color: #1a202c; /* text-gray-900 */
+}
+
+@media (min-width: 640px) {
+  .project-title {
+    font-size: 1.875rem; /* sm:text-3xl */
+  }
+}
+
+.project-description {
+  width: 100%;
+  margin: auto;
+  line-height: 1.5;
+}
+
+@media (min-width: 1024px) {
+  .project-description {
+    width: 66.67%; /* lg:w-2/3 */
+  }
+}
+
+/* Flex grid for the cards */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Gap between cards */
+}
+
+.project-card {
+  flex: 1 1 100%; /* Default full width */
+  max-width: 100%;
+  padding: 1rem; /* p-4 */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .project-card {
+    flex: 1 1 48%; /* Half width on small screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-card {
+    flex: 1 1 32%; /* Third width on large screens */
+  }
+}
+
+.project-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 4px solid #e2e8f0; /* Light border */
+  background-color: white;
+  padding: 2rem; /* Padding inside each card */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-card-inner:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-content {
+  text-align: left;
+}
+
+.project-subtitle {
+  color: #667eea; /* text-indigo-500 */
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.project-heading {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500;
+  color: #1a202c; /* text-gray-900 */
+  margin-bottom: 0.75rem; /* mb-3 */
+}
+
+.project-text {
+  margin-bottom: 0.5rem;
+}
+
+.project-link {
+  color: #667eea; /* text-indigo-500 */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}

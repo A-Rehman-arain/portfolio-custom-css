@@ -1,0 +1,239 @@
+/* Form container
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+ 
+  @media (max-width: 767px) {
+    .form-container {
+        padding: 2rem 1rem; 
+    }
+  }
+  
+
+  @media (min-width: 768px) {
+    .form-container {
+        padding: 3rem;
+    }
+  }
+
+  .form-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a2a2a;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .form-heading {
+        font-size: 2.5rem;
+    }
+  }
+  
+
+  .form-description {
+    color: #555;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+
+  .form-inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .form-inputs {
+        grid-template-columns: 1fr 1fr; 
+    }
+  }
+  
+  .form-input {
+    background-color: #f3f3f3;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .form-input:focus {
+    border-color: #2dd4bf;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+
+  .form-textarea {
+    resize: none;
+    height: 10rem;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .form-textarea:focus {
+    border-color: #2dd4bf;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  .form-submit-button {
+    background-color: #2dd4bf;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-submit-button:hover {
+    background-color: #1d8e73;
+  } */
+
+
+
+
+
+
+
+
+
+  /* Form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Apply padding on small devices */
+@media (max-width: 767px) {
+  .form-container {
+      padding: 2rem 1rem; /* Small padding for left and right on small screens */
+  }
+}
+
+/* Increase padding for larger screens */
+@media (min-width: 768px) {
+  .form-container {
+      padding: 3rem;
+  }
+}
+
+/* Heading styles */
+.form-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .form-heading {
+      font-size: 2.5rem;
+  }
+}
+
+/* Description text style */
+.form-description {
+  color: #555;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Form input fields */
+.form-inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .form-inputs {
+      grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+  }
+}
+
+/* Form input styling */
+.form-input {
+  background-color: #f3f3f3;
+  color: black; /* Text color set to black */
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #2dd4bf;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Textarea styling */
+.form-textarea {
+  resize: none;
+  height: 10rem;
+  background-color: #f3f3f3;
+  color: black; /* Text color set to black */
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-textarea:focus {
+  border-color: #2dd4bf;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Button styling */
+.form-submit-button {
+  background-color: #2dd4bf;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.form-submit-button:hover {
+  background-color: #1d8e73;
+}
+
+/* Placeholder styling */
+::placeholder {
+  color: #888; /* Set placeholder text color */
+}

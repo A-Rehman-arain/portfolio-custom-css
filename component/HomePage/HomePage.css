@@ -1,0 +1,27 @@
+.home-section {
+    height: 100%;
+    width: 100%;
+    z-index: 30;
+    position: relative;
+  }
+  
+  .home-container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .hero-section-container {
+    width: 100%;
+  }
+  
+  .slider-container {
+    margin-top: 80px;
+  }
+  
+  .Frontend-container {
+    margin-top: 80px;
+  }
+  
+  .outcome-container {
+    margin-top: 80px;
+  }

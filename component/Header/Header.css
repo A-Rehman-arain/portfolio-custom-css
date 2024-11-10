@@ -1,0 +1,224 @@
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: #051923;
+  }
+  
+  .header-main-div {
+    height: 80px;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2dd4bf;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  @media (min-width: 850px) {
+    .header-title {
+      font-size: 36px;
+    }
+  }
+  
+  .header-title span {
+    color: #2dd4bf;
+  }
+  
+  .nav-main {
+    display: none;
+  }
+  
+  @media (min-width: 850px) {
+    .nav-main {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+  }
+  
+  .nav-ul {
+    display: flex;
+    gap: 16px;
+    font-weight: 600;
+  }
+  
+  .nav-li {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .nav-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .pathname-href {
+    border-bottom: 2px solid #2dd4bf;
+    color: #2dd4bf;
+  }
+  
+  .link-name {
+    position: relative;
+    z-index: 10;
+    transition: color 0.3s ease;
+  }
+  
+  .link-name:hover,
+  .link-name.group-hover {
+    color: #2dd4bf;
+  }
+  
+  .link-underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2dd4bf;
+    transition: all 0.3s ease;
+  }
+  
+  .group:hover .link-underline {
+    width: 100%;
+  }
+  
+  .hire-me-button {
+    background-color: #2dd4bf;
+    padding: 16px 32px;
+    border: 1px solid #2dd4bf;
+    display: none;
+    transition: all 0.3s ease;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .hire-me-button:hover {
+    background-color: white;
+    border-color: #2dd4bf;
+    color: black;
+    opacity: 0.9;
+  }
+  
+  @media (min-width: 850px) {
+    .hire-me-button {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 850px) {
+    .hamburger-main {
+      display: none;
+    }
+  }
+  
+  .hamburger-icon {
+    color: #2dd4bf;
+  }
+  
+  .mobile-main-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    transition: opacity 0.3s ease;
+  }
+  
+  .side-bar-opens {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .side-bar-close {
+    opacity: 1;
+    pointer-events: none;
+  }
+  
+  .toggle-sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .mobile-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 256px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    color: black;
+  }
+  
+  .mobile-nav-opens {
+    transform: translateX(0);
+  }
+  
+  .mobile-nav-close {
+    transform: translateX(100%);
+  }
+  
+  .cross-icon-main-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .cross-icon-second-div {
+    padding: 16px;
+  }
+  
+  .cross-icon {
+    color: #2dd4bf;
+  }
+  
+  .mobile-nav-ul {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: -20px;
+  }
+  
+  .mobile-nav-li {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .mobile-nav-li:last-child {
+    border-bottom: none;
+  }
+  
+  .mobile-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mobile-nav-links:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .mobile-nav-items {
+    font-weight: 600;
+  }

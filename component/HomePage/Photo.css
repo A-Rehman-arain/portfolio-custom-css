@@ -1,0 +1,20 @@
+.Photo {
+    border-radius: 9999px;
+    border-width: 2px;
+    width: 350px;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 850px) {
+    .Photo {
+      margin-right: 56px;
+      width: 100%;
+    }
+  }
